@@ -23,9 +23,9 @@ else {
     else if d > 0 {
         print("Уравнение имеет два корня")
         let x1 = (-Double(b)-(sqrt(d)))/(2*Double(a))
-        print("Первый корень уравнения равен " + String(NSString(format: "%.2f",x1)))
+        print("Первый корень уравнения равен " + String(format: "%.2f",x1))
         let x2 = (-Double(b)+(sqrt(d)))/(2*Double(a))
-        print("Второй корень уравнения равен " + String(NSString(format: "%.2f",x2)))        
+        print("Второй корень уравнения равен " + String(format: "%.2f",x2))
     }
 }
 
@@ -48,4 +48,4 @@ let stavka:Double = 12.75 //процентная ставка в год
 let procent=(stavka/100)*(1/12) //процентная ставка капитализации в месяц
 let procent2=pow((1+procent),srok) //процент капитализации за период
 let sp=vklad*procent2
-print("Сумма вклада через 5 лет равна " + String(NSString(format: "%.2f",sp)))
+print("Сумма вклада через 5 лет равна " + String(format: "%.2f",sp))
